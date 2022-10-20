@@ -44,6 +44,8 @@ class Handler implements URLHandler {
             String returnString = "";
             for(File f:files){
                 if(FileHelpers.readFile(f).contains(params[1])){
+                    System.out.println(params[1]);
+                    System.out.println(FileHelpers.readFile(f));
                     returnString += f.getPath() + "\n";
                     count++;
                 }
