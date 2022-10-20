@@ -37,7 +37,7 @@ class Handler implements URLHandler {
     }
     public String handleRequest(URI url) throws IOException {
         if(url.getPath().equals("/")){
-            return("There are " + files.size() + " files to search")
+            return("There are " + files.size() + " files to search");
         } else if(url.getPath().contains("/search")){
             String[] params = url.getQuery().split("=");
             int count = 0;
