@@ -48,7 +48,7 @@ class Handler implements URLHandler {
                     count++;
                 }
             }
-            return("There were NNNN files found: " + count + "\n" + returnString);
+            return("There were " + count + " files found:" + "\n" + returnString);
         }
         return "Don't know how to handle that path!";
     }
